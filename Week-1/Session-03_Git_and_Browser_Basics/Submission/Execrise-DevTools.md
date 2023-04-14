@@ -1,5 +1,5 @@
-Question: Which panel in Chrome DevTools should you use to inspect the DOM and CSS of a webpage?
-Answer: You should use the "Elements" panel in Chrome DevTools to inspect the DOM and CSS of a webpage.
+###Question: Which panel in Chrome DevTools should you use to inspect the DOM and CSS of a webpage?
+###Answer: You should use the "Elements" panel in Chrome DevTools to inspect the DOM and CSS of a webpage.
 
 Question: Which panel in Chrome DevTools should you use to debug the JavaScript code on a webpage?
 Answer: You should use the "Sources" panel in Chrome DevTools to debug the JavaScript code on a webpage.
