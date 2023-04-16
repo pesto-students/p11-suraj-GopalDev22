@@ -1,16 +1,16 @@
 # Protocol Stack:
 
-    In computer networking, a protocol stack refers to a set of communication
-    protocols that are used to establish communication between devices or
-    applications in a network. These protocols are arranged in a layered
-    architecture, with each layer performing a specific function.
+In computer networking, a protocol stack refers to a set of communication
+protocols that are used to establish communication between devices or
+applications in a network. These protocols are arranged in a layered
+architecture, with each layer performing a specific function.
 
-    The most widely used protocol stack in web development is the TCP/IP
-    (Transmission Control Protocol/Internet Protocol) protocol stack. It
-    consists of four layers: the application layer, transport layer, network
-    layer, and data link layer. Each layer is responsible for a different
-    aspect of communication, such as data formatting, data transmission,
-    addressing, and error detection.
+The most widely used protocol stack in web development is the TCP/IP
+(Transmission Control Protocol/Internet Protocol) protocol stack. It
+consists of four layers: the application layer, transport layer, network
+layer, and data link layer. Each layer is responsible for a different
+aspect of communication, such as data formatting, data transmission,
+addressing, and error detection.
 
 ![protocol stack!](./Assets/protocol.png "Protocol stack")
 
@@ -97,4 +97,4 @@ Web developers can optimize their websites for better search engine rankings in 
 
 ### Conclusion:
 
-- SEO is an important aspect of website development that can help to improve the visibility and traffic of a website by improving its search engine ranking. Web developers can optimize their websites for better search engine rankings by conducting keyword research, on-page optimization, off-page optimization, technical optimization, and content creation. By following best practices for SEO, web developers can ensure that their websites are visible to potential customers and generate more traffic and revenue.
+SEO is an important aspect of website development that can help to improve the visibility and traffic of a website by improving its search engine ranking. Web developers can optimize their websites for better search engine rankings by conducting keyword research, on-page optimization, off-page optimization, technical optimization, and content creation. By following best practices for SEO, web developers can ensure that their websites are visible to potential customers and generate more traffic and revenue.
