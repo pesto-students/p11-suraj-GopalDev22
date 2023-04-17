@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starting Lineup</title>
+    <style>
+      form {
+        max-width: 40%;
+        margin: 100px auto;
+      }
+
+      .date {
+        display: inline;
+      }
+      fieldset {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>Starting Lineup</p>
+      <fieldset>
+        <legend><p>Status:</p></legend>
+        <input type="radio" id="Draft" name="status" value="Draft" />
+        <label for="Draft">Draft</label>
+        <input type="radio" id="Final" name="status" value="Final" checked />
+        <label for="Final">Final</label>
+      </fieldset>
+
+      <p class="date">Dates:</p>
+      <select name="gameDate">
+        <option value="March-20">March 20</option>
+        <option value="March-24">March 24</option>
+        <option value="April-2">April 2</option>
+        <option value="April-6">April 6</option>
+        <option value="April-13">April 13</option>
+      </select>
+      <fieldset>
+        <legend><p>Players:</p></legend>
+        <input type="checkbox" id="Aarav" name="player" value="Aarav Agarwal" />
+        <label for="Aarav">Aarav Agarwal</label><br />
+        <input type="checkbox" id="Ava" name="player" value="Ava Johnson" />
+        <label for="Ava">Ava Johnson</label><br />
+        <input type="checkbox" id="Julio" name="player" value="Julio Ortiz" />
+        <label for="Julio">Julio Ortiz</label><br />
+        <input type="checkbox" id="Liam" name="player" value="Liam Rubio" />
+        <label for="Liam">Liam Rubio</label><br />
+        <input
+          type="checkbox"
+          id="Emma"
+          name="player"
+          value="Emma Witherspoon"
+        />
+        <label for="Emma">Emma Witherspoon</label>
+      </fieldset>
+      <input type="button" value="Submit" />
+    </form>
+  </body>
+</html>
