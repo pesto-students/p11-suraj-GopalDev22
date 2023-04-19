@@ -13,6 +13,11 @@ body {
 
 h1 {
   color: #df2e38;
+  text-shadow: 1px 1px 0px #000;
+  transition: all 0.3s ease;
+}
+h1:hover {
+  color: #8f43ee;
 }
 nav {
   padding: 30px 0px;
@@ -29,6 +34,7 @@ a {
   color: #8f43ee;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 0px white;
 }
 a:hover {
   color: brown;
@@ -132,9 +138,3 @@ iframe {
     margin-left: 10px;
   }
 }
-/* @media (min-width: 769px) and (max-width: 1280px) {
-  .main {
-    max-width: 80%;
-    padding: 10px;
-  }
-} */
