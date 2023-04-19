@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday Message Creator</title>
     <style>
-      form {
-        max-width: 60%;
-        margin: 20px auto;
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       section {
         padding: 5px 0px;
@@ -58,7 +62,7 @@
       </section>
       <section>
         <label for="number">Number of blinks?</label>
-        <input type="number" id="number" value="0" required />
+        <input type="number" id="number" value="0" required min="0" max="10" />
       </section>
       <section>
         <label for="music">Music volume?</label>
