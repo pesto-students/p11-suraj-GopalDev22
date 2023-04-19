@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fef2f4;
 }
 nav {
   padding: 30px 0;
@@ -24,7 +25,8 @@ li {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #8f43ee;
+  font-weight: 600;
 }
 a:hover {
   color: brown;
@@ -46,3 +48,105 @@ p {
 .overview {
   padding: 20px 0;
 }
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+div {
+  padding: 10px 0;
+}
+#name {
+  margin-left: 50px;
+}
+#dropdown {
+  margin-left: 20px;
+}
+#visit {
+  margin-left: 10px;
+}
+#rating {
+  margin-left: 50px;
+}
+#textarea {
+  margin-left: 50px;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+button {
+  color: white;
+  font-weight: 600;
+  background-color: rgba(0, 208, 255, 0.867);
+  border: 1px solid rgba(26, 142, 142, 0.928);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+button:hover {
+  color: brown;
+}
+.heading {
+  color: brown;
+}
+fieldset {
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid grey;
+}
+footer {
+  padding: 20px 0;
+  margin-right: 270px;
+}
+.footer {
+  margin-right: 90px;
+}
+.about-footer {
+  margin-right: 60px;
+}
+.main {
+  max-width: 50%;
+  margin-left: 30px;
+  padding: 0 40px;
+}
+iframe {
+  width: 500px;
+  height: 800px;
+}
+
+.underline {
+  text-decoration: underline;
+  color: #62cdff;
+}
+
+@media screen and (max-width: 786px) {
+  .hero {
+    width: 300px;
+    height: 200px;
+  }
+  .main {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  fieldset {
+    border: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  iframe {
+    width: 300px;
+    height: 400px;
+    margin-left: 10px;
+  }
+}
+/* @media (min-width: 769px) and (max-width: 1280px) {
+  .main {
+    max-width: 80%;
+    padding: 10px;
+  }
+} */
