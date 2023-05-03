@@ -10,6 +10,7 @@ const divideArray = (arr) => {
     }
   }
   console.log("Even Number:");
+  if (evenNum.length === 0) console.log("none");
   for (let i = 0; i < evenNum.length; i++) {
     if (evenNum.length !== 0) {
       console.log(evenNum[i]);
@@ -18,11 +19,10 @@ const divideArray = (arr) => {
     }
   }
   console.log("Odd Number:");
+  if (oddNum.length === 0) console.log("none");
   for (let i = 0; i < oddNum.length; i++) {
     if (oddNum.length !== 0) {
       console.log(oddNum[i]);
-    } else {
-      console.log("no odd number");
     }
   }
 };
