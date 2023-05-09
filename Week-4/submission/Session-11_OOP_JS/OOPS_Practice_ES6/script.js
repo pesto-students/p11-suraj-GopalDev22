@@ -41,3 +41,93 @@ const rideInst = new RideShareCar(
 console.log(vehicleInst, carInst, rideInst);
 //console of vehicle drive
 vehicleInst.drive();
+
+console.log("**** Polymorphism ****");
+//Section - 2 Polymorphism
+
+class Shape {
+  calculateArea() {
+    return radius;
+  }
+}
+class Rectange extends Shape {
+  calculateArea(width, height) {
+    return width * height;
+  }
+}
+class Triangle extends Shape {
+  calculateArea(base, height) {
+    return (base * height) / 2;
+  }
+}
+class Circle extends Shape {
+  calculateArea(radius) {
+    return Math.PI * radius * radius;
+  }
+}
+
+//creating instance of rectangle, triangle, circle
+const rectInstance = new Rectange();
+console.log(rectInstance.calculateArea(10, 5));
+
+const triInstance = new Triangle();
+console.log(triInstance.calculateArea(3, 6));
+
+const circleInstance = new Circle();
+console.log(circleInstance.calculateArea(4));
+
+console.log("**** Abstraction and Encapsulation ****");
+//Abstraction and Encapsulation
+
+const balanceMap = new WeakMap();
+
+class BankAccount {
+  #accountNumber;
+  #accountHolderName;
+  constructor(accountNumber, balance, accountHolderName) {
+    this.#accountNumber = accountNumber;
+    balanceMap.set(this, balance);
+    this.#accountHolderName = accountHolderName;
+  }
+}
+
+class CheckingAccount extends BankAccount {
+  deposit(amount) {
+    balanceMap.set(this, balanceMap.get(this) + amount);
+  }
+
+  withdraw(amount) {
+    balanceMap.set(this, balanceMap.get(this) - amount);
+  }
+
+  getBalance() {
+    return balanceMap.get(this);
+  }
+}
+
+class SavingsAccount extends BankAccount {
+  deposit(amount) {
+    balanceMap.set(this, balanceMap.get(this) + amount);
+  }
+
+  withdraw(amount) {
+    if (balanceMap.get(this) - amount < 0) {
+      console.log("Withdrawal failed: insufficient funds");
+    } else {
+      balanceMap.set(this, balanceMap.get(this) - amount);
+    }
+  }
+
+  getBalance() {
+    return balanceMap.get(this);
+  }
+}
+
+//creating instance
+const savingInstance = new SavingsAccount("Venu", 100, 27635);
+console.log(savingInstance);
+savingInstance.deposit(300);
+console.log(savingInstance.getBalance());
+savingInstance.withdraw(500);
+savingInstance.withdraw(200);
+console.log(savingInstance.getBalance());
