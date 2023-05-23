@@ -10,7 +10,12 @@ function startAnimation(e) {
   let clickY = e.clientY;
 
   // TODO: Modify the code below
-  moveImage(clickX, clickY);
+  if (timerId !== null) {
+    clearInterval(timerId); // Stop the timer if it's already running
+  }
+  timerId = setInterval(function () {
+    moveImage(clickX, clickY);
+  }, 10);
 }
 
 function moveImage(x, y) {
@@ -24,11 +29,17 @@ function moveImage(x, y) {
   // around the clicked (x, y) coords
   const centerX = Math.round(x - img.width / 2);
   const centerY = Math.round(y - img.height / 2);
-
+  console.log(x, y);
+  console.log(imgX, imgY);
   // TODO: Add code here
+  if (imgX === centerX && imgY === centerY) {
+    clearInterval(timerId); // Stop the timer if the heart has reached the destination
+    timerId = null; // Reset the timer ID
+    return;
+  }
 
-  // Move 1 pixel in both directions toward the click
   if (imgX < centerX) {
+    // Move 1 pixel in both directions toward the click
     imgX++;
   } else if (imgX > centerX) {
     imgX--;
