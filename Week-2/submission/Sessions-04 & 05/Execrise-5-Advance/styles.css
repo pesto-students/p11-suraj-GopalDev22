@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fef2f4;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  color: #df2e38;
+  text-shadow: 1px 1px 0px #000;
+  transition: all 0.3s ease;
+}
+h1:hover {
+  color: #8f43ee;
+}
+nav {
+  padding: 30px 0px;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #8f43ee;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 0px white;
+}
+a:hover {
+  color: brown;
+
+  padding-bottom: 5px;
+
+  border-bottom: 2px solid black;
+}
+.rating {
+  display: flex;
+  padding: 20px 0;
+}
+.res-1 {
+  padding-bottom: 20px;
+}
+p {
+  padding-bottom: 20px;
+}
+.overview {
+  padding: 20px 0;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+div {
+  padding: 10px 0;
+}
+#name {
+  margin-left: 50px;
+}
+#dropdown {
+  margin-left: 20px;
+}
+#visit {
+  margin-left: 10px;
+}
+#rating {
+  margin-left: 50px;
+}
+#textarea {
+  margin-left: 50px;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+button {
+  color: white;
+  font-weight: 600;
+  background-color: rgba(0, 208, 255, 0.867);
+  border: 1px solid rgba(26, 142, 142, 0.928);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+button:hover {
+  color: brown;
+}
+.heading {
+  color: brown;
+}
+fieldset {
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid grey;
+}
+
+iframe {
+  width: 500px;
+  height: 600px;
+}
+
+.underline {
+  text-decoration: underline;
+  color: #62cdff;
+}
+
+@media screen and (max-width: 786px) {
+  .hero {
+    width: 300px;
+    height: 200px;
+  }
+  .main {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  fieldset {
+    border: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  iframe {
+    width: 300px;
+    height: 400px;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  scroll-behavior: smooth;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  width: 60vw;
+  height: auto;
+  margin: 2rem auto;
+}
+header {
+  width: 100%;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+}
+header > h1 > a {
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+header > h1 > a:hover {
+  text-shadow: 3px 3px 1px red;
+}
+#projects > h1,
+#experience > h1 {
+  transition: all 0.4s ease;
+}
+#projects > h1:hover,
+#experience > h1:hover {
+  text-shadow: 3px 3px 1px red;
+  cursor: pointer;
+}
+nav > ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+nav > ul > li > a:hover {
+  color: lightgreen;
+  border-bottom: 2px solid lightgreen;
+  padding-bottom: 0.5rem;
+}
+.btn {
+  background-color: lightgreen;
+  padding: 0.4rem 0.5rem;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  transition: all 0.4s ease;
+  color: black;
+}
+.btn:hover {
+  color: red;
+}
+#home {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+#home > h1 {
+  padding: 0.6rem;
+  border: 2px solid white;
+}
+#home > h1:hover {
+  border: 2px solid lightgreen;
+}
+#home > p {
+  padding: 3rem 1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+#about > h1 {
+  text-align: left;
+  transition: all 0.4s ease;
+  padding-bottom: 1rem;
+}
+#about > h1:hover {
+  text-shadow: 3px 3px 1px red;
+  cursor: pointer;
+}
+#about > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+#about > ul > li > img {
+  height: 60px;
+  width: 60px;
+}
+#about > ul > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#experience,
+#projects {
+  padding-top: 6rem;
+}
+
+.job {
+  padding: 1rem 0;
+}
+.date {
+  padding: 1.5rem;
+  color: lightgreen;
+}
+.company_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.company_details_name > h3,
+h4 {
+  color: lightgreen;
+}
+
+#contacts > fieldset {
+  border: 2px solid lightgreen;
+  border-radius: 0.2rem;
+
+  margin: 4rem 5rem;
+}
+legend {
+  padding: 0 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+form > div {
+  display: flex;
+  justify-content: space-between;
+}
+form > div > input {
+  width: 50%;
+}
+.submit {
+  margin: 1rem auto;
+}
+.submit_btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: lightgreen;
+  color: black;
+  font-weight: 600;
+}
+.submit_btn:hover {
+  color: red;
+}
+footer {
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  header > h1 {
+    display: none;
+  }
+  header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+  #contacts {
+    display: flex;
+    justify-content: center;
+  }
+  .company_details {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+  }
+  .date {
+    padding: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  header > h1 > a > span {
+    display: none;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  body {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  #contacts {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Restaurant Review</title>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant Reviews</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./addreview.html">Add Reviews</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="review-form">
+      <fieldset>
+        <legend><h3 class="heading">Add Review</h3></legend>
+        <div>
+          <label for="name">Name?</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div>
+          <label for="dropdown">Restaurant?</label>
+          <select id="dropdown" name="dropdown">
+            <option disabled selected hidden>choose one..</option>
+            <option>Main Street Cafe</option>
+            <option>Greek House</option>
+          </select>
+        </div>
+        <div>
+          <label for="visit">Date of Visit?</label>
+          <input id="visit" type="date" />
+        </div>
+        <div>
+          <label for="rating">Rating?</label>
+          <input type="number" min="0" max="5" id="rating" value="5" />
+        </div>
+        <div>
+          <label for="textarea">Details?</label>
+          <textarea rows="5" cols="40" id="textarea"></textarea>
+        </div>
+        <div class="btn">
+          <button>Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    <footer><p>&copy; 2023 Restaurant Reviews</p></footer>
+  </body>
+</html>
